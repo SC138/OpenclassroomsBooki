@@ -41,22 +41,24 @@
             <p>En plein centre-ville ou en pleine nature</p>
             
             <!-- barre de recherche -->
-            <div id="searchbar"> 
-                <form action="" class="formulaire">
+            <form action="index.html" class="formulaire">
+                <label class="search_icon" for="point_recherche">
                     <i class="fa-solid fa-location-dot"></i>
-                    <input class="champ" type="text" value="Marseille,France"/>
-                    <input class="bouton" type="button" value="Rechercher" />  
-                </form>
-            </div>
+                    <input class="champ" id="point_recherche" type="text" placeholder="Marseille,France"/>
+                </label>
+                
+                <button class="bouton" type="submit"><i class="fa-solid fa-magnifying-glass"></i><span class="hide_search">Rechercher</span></button> 
+            </form>
+            
 
             <!--filtres-->
             <div class="filter">
                 <h2>Filtres</h2>
                 <div class="filter_zone">
-                    <a href="#" class="btn_filter"><i class="fa-solid fa-money-bill-wave"></i><p>Économique</p></a>
-                    <a href="#" class="btn_filter"><i class="fa-solid fa-person"></i><p>Familial</p></a>
-                    <a href="#" class="btn_filter"><i class="fa-solid fa-heart"></i><p>Romantique</p></a>
-                    <a href="#" class="btn_filter"><i class="fa-solid fa-dog"></i><p>Animaux autorisés</p></a>
+                    <a href="#" class="btn_filter"><i class="fa-solid fa-money-bill-wave filter_icone"></i><p>Économique</p></a>
+                    <a href="#" class="btn_filter"><i class="fa-solid fa-person filter_icone"></i><p>Familial</p></a>
+                    <a href="#" class="btn_filter"><i class="fa-solid fa-heart filter_icone"></i><p>Romantique</p></a>
+                    <a href="#" class="btn_filter"><i class="fa-solid fa-dog filter_icone"></i><p>Animaux autorisés</p></a>
                 </div>
             </div>
 
