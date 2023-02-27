@@ -1,0 +1,52 @@
+*{
+    font-family: Raleway;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1400px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 5em 3em 5em;
+}
+
+.logo{
+    width: 8%;
+}
+
+.nav_bar{
+    display: flex;
+    position: relative;
+}
+
+.nav_bar > li{
+    list-style-type: none;
+}
+
+.nav_bar > li > a{
+    margin-right: 3em;
+    text-decoration: none;
+    color: black;
+}
+
+.nav_bar > li > a:hover{
+    color: #0065fc;
+}
+
+.nav_bar > li > a:hover::before{
+    content: "";
+    position: absolute;
+    background-color: #0065fc;
+    width: 162px;
+    height: 2px;
+    display: block;
+    top: -3em;
+    transform:translateX(-20%);
+}
+
