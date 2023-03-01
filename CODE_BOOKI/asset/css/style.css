@@ -9,6 +9,8 @@ body{
     max-width: 1400px;
 }
 
+/* en tête */
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -54,6 +56,16 @@ body{
     margin-left: 5em;
 }
 
+.recherche > h1{
+    margin-bottom: 5px;
+}
+
+.recherche > p{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* barre de recherche */
 
 .search_icon{
     width: 350px;
@@ -97,9 +109,12 @@ body{
     display: none;
 }
 
+/* filtres */
+
 .filter{
     display: flex;
-    align-items: center;  
+    align-items: center; 
+    margin-top: 30px; 
 }
 
 .filter_zone{
@@ -137,10 +152,204 @@ body{
     margin: 0;
 }
 
+/* info */
+
+.info{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
 
 
 
+.fa-info{
+    color: #0065FC;
+    border: solid 1px #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
 
+/* contenu du site */
+
+.flex {
+    width: 89%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.background{
+    background-color: #f2f2f2;
+    height: max-content;
+}
+
+.bloc_hebergement{
+    width: 70%;
+    padding-bottom: -50px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 30px;
+    border-radius: 20px;
+    /* border: solid 1px red ; */
+}
+
+.bloc_hebergement > h2, .afficher_plus {
+    margin-left: 60px;
+}
+
+.afficher_plus{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    bottom: 30px;
+}
+
+.hebergement_ville{
+    /* padding-left: 30px; */
+    margin-top: 40px;
+    font-size: 1.5em;
+}
+
+.bloc_cards{
+    display: flex;
+    flex-flow: row wrap;
+    margin: -50px 0 0 35px; 
+    
+}
+
+.bloc_cards > a{
+    text-decoration: none;
+}
+
+.card{
+    width: 220px;
+    border-radius: 15px 15px;
+    background-color: white;
+    padding: 4px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.bloc_image{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: -15px;
+}
+
+.text_bloc{
+    margin-left: 10px;
+    color: black;
+}
+
+.text_bloc > h3{
+    margin-bottom: -10px;
+}
+
+.note_hotel{
+    margin-left: 10px;
+    margin-top: -10px;
+    padding-bottom: 5px;
+    color: #0065FC;
+}
+
+.fa-star{
+    margin: -2px;
+}
+
+.grey{
+    color: #f2f2f2;
+}
+
+
+/* les plus polulaires */
+
+
+.bloc_populaires{
+    width: 25%;
+    margin-top: 50px;
+    margin-left: 30px;
+    border-radius: 20px;
+    /* border: solid 1px red ; */
+}
+
+
+
+.titre_popu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.titre_popu > i{
+    color: #0065FC;
+    font-size: 20px;
+}
+
+.titre_popu > h2{
+    font-size: 1.5em;
+}
+
+.cards_popu{
+    width: 100%;
+}
+
+.cards_popu > a {
+    text-decoration: none;
+    color: black;
+}
+
+.bloc_popu{
+    width: 90%;
+    margin: 0 auto 54px auto;
+    display: flex;
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+    column-gap: 10px;
+    padding: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.bloc_popu > img{
+    width: 120px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+    
+}
+
+
+
+.flex_popu{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.text_bloc_popu > h3{
+    font-size: 1em;
+    margin-top: 7px;
+    padding: 0;
+}
+
+.text_bloc_popu > p{
+    font-size: .8em;
+    padding: 0;
+    margin-top: -10px;
+}
+
+
+.note_popu{
+    position: absolute;
+    bottom: 5px;
+    left: 125px;
+}
 
 
 
