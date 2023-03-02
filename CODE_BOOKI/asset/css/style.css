@@ -319,8 +319,7 @@ body{
     width: 120px;
     height: 130px;
     object-fit: cover;
-    border-radius: 20px 0 0 20px;
-    
+    border-radius: 20px 0 0 20px;  
 }
 
 
@@ -350,6 +349,87 @@ body{
     bottom: 5px;
     left: 125px;
 }
+
+
+/* Activités à Marseille */
+
+.activites{
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.bloc_activites{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+}
+
+.activites_marseille{
+    margin-left: 80px;
+}
+
+.containerActivites {
+    width: 22%;    
+}
+
+.card_activites{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.containerActivites > a{
+    color: black;
+    text-decoration: none;
+}
+
+.activites_img{
+    width: 100%;
+    height: 350px;
+    border-radius: 20px 20px 0 0 ;
+    object-fit: cover; 
+}
+
+.card_activites > h3 {
+    font-size: 1em;
+    padding: 0 0 15px 10px;
+}
+
+/* footer - bas de page  */
+
+footer{
+    width: 93%;
+}
+
+.footer_content{
+    width: 88%;
+    display: flex;
+    background-color: #f2f2f2;
+    margin: 30px 80px 0 80px;
+    padding: 20px 0 100px 60px;
+}
+
+.footer_inside{
+    display: flex;
+    flex-direction: column;
+    padding-right: 190px;
+    
+}
+
+.footer_inside > a{
+    color: black;
+    text-decoration: none;
+    padding-bottom: 15px;
+    
+}
+
+
+
+
+
+
 
 
 
