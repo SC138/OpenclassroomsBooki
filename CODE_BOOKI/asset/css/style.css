@@ -583,40 +583,59 @@ body{
 
     /* Activités à Marseille */
 
-    .activites{
-        
+    .activites_marseille{
+        padding-left: 43px;
     }
 
+    .bloc_activites{
 
+    }
 
+    .containerActivites {
+        width: 23.5%;
+    }
 
+    .activites_img{
+        height: 180px;
+    } 
 
+    .card_activites{
+        height: 100%;
+    }
 
-
-
-
-
-
-
-
-
-
-
+    .card_activites > h3{
+        font-size: .8em;
+        margin: 0;
+        padding: 5px 0px 5px 10px ;
+    }
 
 
 /* footer */
 
-    .test{
-        width: 50%;
+    .footer{
+        width: 80%;
+        padding-left: 40px;
     }
 
     .footer_content{
         width: 100%;
+        padding-bottom: 40px;
+        /* padding-right: 60px; */
         
     }
 
     .footer_inside{
-        padding-right: 0;
+        width: 100%;
+        padding-right: 60px;
+    }
+
+    .footer_inside > h3{
+        font-size: .9em;
+    }
+
+    .footer_inside > a{
+        font-size: .6em;
+        padding-bottom: 10px;
     }
 }
 
