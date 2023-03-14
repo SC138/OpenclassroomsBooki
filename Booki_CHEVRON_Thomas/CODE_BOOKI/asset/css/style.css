@@ -1092,7 +1092,6 @@ body {
 @media screen and (max-width: 319px) {
 
     .header {
-        /* width: 100%; */
         flex-direction: column;
         margin: 0;
     }
@@ -1151,11 +1150,8 @@ body {
     }
 
     .recherche {
-        /* width: 100%; */
         padding-left: 1em;
     }
-
-
 
 
     /* filtres */
