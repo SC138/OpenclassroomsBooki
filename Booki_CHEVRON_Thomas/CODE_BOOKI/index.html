@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <!-- fichier CSS -->
-    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- titre -->
     <title>Booki</title>
 </head>
@@ -23,15 +23,15 @@
 
     <!-- en tête -->
     <header class="header">
-        <img class="logo" src="asset/pictures/Booki.png" alt="Logo Booki">
+        <img class="logo" src="images/Booki.png" alt="Logo Booki">
 
         <nav>
             <ul class="nav_bar">
-                <li>
-                    <a class="before" href="#">Hébergements</a>
+                <li class="nav_gauche">
+                    <a class="before" href="#hebergement">Hébergements</a>
                 </li>
-                <li>
-                    <a class="before2" href="#">Activités</a>
+                <li class="nav_droite">
+                    <a class="before2" href="#activites">Activités</a>
                 </li>
             </ul>
         </nav>
@@ -46,10 +46,10 @@
             <form action="index.html" class="formulaire">
                 <label class="search_icon" for="point_recherche">
                     <i class="fa-solid fa-location-dot"></i>
-                    <input class="champ" id="point_recherche" type="text" placeholder="Marseille,France">
+                    <input class="champ" id="point_recherche" type="text" value="Marseille, France">
                 </label>
 
-                <button class="bouton" type="submit"><i class="fa-solid fa-magnifying-glass"></i><span
+                <button class="bouton" ><i class="fa-solid fa-magnifying-glass"></i><span
                         class="hide_search">Rechercher</span></button>
             </form>
 
@@ -67,8 +67,8 @@
                     <a href="#" class="btn_filter"><i class="fa-solid fa-heart filter_icone"></i>
                         <p>Romantique</p>
                     </a>
-                    <a href="#" class="btn_filter"><i class="fa-solid fa-fire filter_icone"></i>
-                        <p>Nos pépites</p>
+                    <a href="#" class="btn_filter"><i class="fa-solid fa-dog filter_icone"></i>
+                        <p>Animaux autoriés</p>
                     </a>
                 </div>
             </div>
@@ -76,7 +76,7 @@
             <!--info-->
             <div class="info">
                 <i class="fa-solid fa-info"></i>
-                <p>Plus de 500 hébergements sont disponibles dans cette zone</p>
+                <p>Plus de 500 hébergements sont disponibles dans cette ville</p>
             </div>
         </section>
 
@@ -87,8 +87,8 @@
                     <h2 class="hebergement_ville">Hébergements à Marseille</h2>
                     <div class="bloc_cards">
                         <a href="#">
-                            <div class="card">
-                                <img class="bloc_image" src="asset/pictures/Auberge-la-cannebiere.jpg"
+                            <article class="card">
+                                <img class="bloc_image" src="images/Auberge-la-cannebiere.jpg"
                                     alt="Auberge-la-cannebiere">
                                 <div class="text_bloc">
                                     <h3>Auberge La Canebiére</h3>
@@ -101,12 +101,12 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star grey"></i>
                                 </div>
-                            </div>
+                            </article>
                         </a>
 
                         <a href="#">
-                            <div class="card">
-                                <img class="bloc_image" src="asset/pictures/hotel-du-port.jpg" alt="Hôtel du port">
+                            <article class="card">
+                                <img class="bloc_image" src="images/hotel-du-port.jpg" alt="Hôtel du port">
                                 <div class="text_bloc">
                                     <h3>Hôtel du port</h3>
                                     <p>Nuit à partir de 52€ </p>
@@ -118,12 +118,12 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star grey"></i>
                                 </div>
-                            </div>
+                            </article>
                         </a>
 
                         <a href="#">
-                            <div class="card">
-                                <img class="bloc_image" src="asset/pictures/hotel-les-mouettes.jpg"
+                            <article class="card">
+                                <img class="bloc_image" src="images/hotel-les-mouettes.jpg"
                                     alt="Hôtel Les mouettes">
                                 <div class="text_bloc">
                                     <h3>Hôtel Les mouettes</h3>
@@ -136,12 +136,12 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star grey"></i>
                                 </div>
-                            </div>
+                            </article>
                         </a>
 
                         <a href="#">
-                            <div class="card">
-                                <img class="bloc_image" src="asset/pictures/hotel-de-la-mer.jpg" alt="Hôtel de la mer">
+                            <article class="card">
+                                <img class="bloc_image" src="images/hotel-de-la-mer.jpg" alt="Hôtel de la mer">
                                 <div class="text_bloc">
                                     <h3>Hôtel de la mer</h3>
                                     <p>Nuit à partir de 46€ </p>
@@ -153,12 +153,12 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star grey"></i>
                                 </div>
-                            </div>
+                            </article>
                         </a>
 
                         <a href="#">
-                            <div class="card">
-                                <img class="bloc_image" src="asset/pictures/auberge-le-panier.jpg"
+                            <article class="card">
+                                <img class="bloc_image" src="images/auberge-le-panier.jpg"
                                     alt="Auberge Le Panier">
                                 <div class="text_bloc">
                                     <h3>Auberge Le Panier</h3>
@@ -171,12 +171,12 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star grey"></i>
                                 </div>
-                            </div>
+                            </article>
                         </a>
 
                         <a href="#">
-                            <div class="card">
-                                <img class="bloc_image" src="asset/pictures/hotel-chez-amina.jpg"
+                            <article class="card">
+                                <img class="bloc_image" src="images/hotel-chez-amina.jpg"
                                     alt="Hôtel Chez Amina">
                                 <div class="text_bloc">
                                     <h3>Hôtel Chez Amina</h3>
@@ -189,7 +189,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star grey"></i>
                                 </div>
-                            </div>
+                            </article>
                         </a>
                     </div>
                     <a class="afficher_plus" href="#">
@@ -208,8 +208,8 @@
 
                     <div class="cards_popu">
                         <a href="#">
-                            <div class="bloc_popu">
-                                <img src="asset/pictures/hotel-le-soleil-du-matin.jpg" alt="Hôtel le soleil du matin">
+                            <article class="bloc_popu">
+                                <img class="img-popu" src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin">
                                 <div class="flex_popu">
                                     <div class="text_bloc_popu">
                                         <h3>Hôtel le soleil du matin</h3>
@@ -223,12 +223,12 @@
                                         <i class="fa-solid fa-star grey"></i>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         </a>
 
                         <a href="#">
-                            <div class="bloc_popu">
-                                <img src="asset/pictures/chambres-dhotes-au-coeur-de-leau.jpg"
+                            <article class="bloc_popu">
+                                <img class="img-popu" src="images/aw-creative-VGs8z60yT2c-unsplash.jpg"
                                     alt="Chambres d'hôtes Au coeur de l'eau">
                                 <div class="flex_popu">
                                     <div class="text_bloc_popu">
@@ -243,12 +243,12 @@
                                         <i class="fa-solid fa-star grey"></i>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         </a>
 
                         <a href="#">
-                            <div class="bloc_popu">
-                                <img src="asset/pictures/hotel-bleu-blanc.jpg" alt="Hôtel Bleu et Blanc">
+                            <article class="bloc_popu">
+                                <img class="img-popu" src="images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Bleu et Blanc">
                                 <div class="flex_popu">
                                     <div class="text_bloc_popu">
                                         <h3>Hôtel Bleu et Blanc</h3>
@@ -262,7 +262,7 @@
                                         <i class="fa-solid fa-star grey"></i>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         </a>
                     </div>
 
@@ -273,47 +273,47 @@
         </section>
 
         <!--Activités à Marseille-->
-        <section class="activites">
+        <section id="activites">
             <h2 class="activites_marseille">Activités à Marseille</h2>
             <div class="bloc_activites">
                 <div class="containerActivites">
                     <a href="#">
-                        <div class="card_activites">
-                            <img class="activites_img" src="asset/pictures/vieux-port.jpg" alt="Vieux port">
+                        <article class="card_activites">
+                            <img class="activites_img" src="images/vieux-port.jpg" alt="Vieux port">
                             <h3>Vieux-Port</h3>
-                        </div>
+                        </article>
 
                     </a>
                 </div>
     
                 <div class="containerActivites">
                     <a href="#">
-                        <div class="card_activites">
-                            <img class="activites_img" src="asset/pictures/fort-de-pomegues.jpg" alt="Fort de Pomègues">
+                        <article class="card_activites">
+                            <img class="activites_img" src="images/fort-de-pomegues.jpg" alt="Fort de Pomègues">
                             <h3>Fort de Pomègues</h3>
-                        </div>
+                        </article>
                         
                     </a>
                 </div>
     
                 <div class="containerActivites">
                     <a href="#">
-                        <div class="card_activites">
-                            <img class="activites_img" src="asset/pictures/parc-national-des-calanques.jpg"
+                        <article class="card_activites">
+                            <img class="activites_img" src="images/parc-national-des-calanques.jpg"
                             alt="Parc national des Calanques">
                             <h3 class="modif">Parc national des Calanques</h3>
-                        </div>
+                        </article>
                         
                     </a>
                 </div>
     
                 <div class="containerActivites">
                     <a href="#">
-                        <div class="card_activites">
-                            <img class="activites_img" src="asset/pictures/notre-dame-de-la-garde.jpg"
+                        <article class="card_activites">
+                            <img class="activites_img" src="images/notre-dame-de-la-garde.jpg"
                             alt="Notre-Dame-de-la-Garde">
                             <h3 class="modif">Notre-Dame-de-la-Garde</h3>
-                        </div>
+                        </article>
                         
                     </a>
                 </div>
